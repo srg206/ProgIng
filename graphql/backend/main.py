@@ -1,18 +1,12 @@
-from storage.storage import users_data, events_data
-from schemes.schemes import type_defs
-import datetime
-import json
-from ariadne import QueryType, ObjectType, make_executable_schema, graphql_sync, ScalarType
+from ariadne import  graphql_sync
 from fastapi import FastAPI, Request, HTTPException
 from starlette.responses import JSONResponse
 import uvicorn
+from resolvers.resolvers import schema
 
 
 
-
-
-schema = make_executable_schema()
-
+from datetime import datetime
 
 app = FastAPI()
 
