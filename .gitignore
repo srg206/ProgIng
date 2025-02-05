@@ -32,6 +32,10 @@ MANIFEST
 *.manifest
 *.spec
 
+test.py
+test2.py
+test/
+
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
